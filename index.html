@@ -3,33 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meditación Sonora con Sitares - Escobar</title>
+    <title>Meditación Sonora con Sitares - Cámara Taquiónica</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --oro: #D4AF37;
-            --oro-viejo: #C5A028;
-            --marron-oscuro: #2C1B12;
-            --marron-claro: #4E3629;
-            --crema: #F5E6CA;
+            --marron-oscuro: #2c1e14;
+            --marron-medio: #5d4037;
+            --dorado: #d4af37;
+            --dorado-suave: #f4e4bc;
+            --crema: #fdf5e6;
         }
 
-
         body {
-            margin: 0;
             font-family: 'Raleway', sans-serif;
             background-color: var(--marron-oscuro);
             color: var(--crema);
+            margin: 0;
+            padding: 0;
             line-height: 1.6;
         }
 
-
         h1, h2, h3 {
             font-family: 'Cinzel', serif;
-            color: var(--oro);
+            color: var(--dorado);
             text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
-
 
         .container {
             max-width: 900px;
@@ -37,162 +37,180 @@
             padding: 20px;
         }
 
-
         /* Hero Section */
-        header {
-            padding: 60px 20px;
-            text-align: center;
-            background: linear-gradient(rgba(44, 27, 18, 0.7), rgba(44, 27, 18, 0.7)), 
-                        url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&q=80'); /* Fondo sutil de estrellas */
+        .hero {
+            background: linear-gradient(rgba(44, 30, 20, 0.8), rgba(44, 30, 20, 0.8)), url('https://images.unsplash.com/photo-1536531357297-280874676449?auto=format&fit=crop&q=80'); /* Imagen de fondo espiritual */
             background-size: cover;
-            border-bottom: 2px solid var(--oro);
+            background-position: center;
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 2px solid var(--dorado);
         }
 
+        .hero h1 { font-size: 2.5em; margin-bottom: 10px; }
+        .hero p { font-size: 1.2em; color: var(--dorado-suave); }
 
-        .main-title { font-size: 2.5em; margin-bottom: 10px; text-shadow: 2px 2px 4px #000; }
-        .subtitle { font-size: 1.2em; color: var(--oro-viejo); letter-spacing: 2px; }
-
-
-        /* Imagen Artistas */
-        .img-artistas {
-            width: 100%;
-            max-width: 700px;
-            display: block;
-            margin: -40px auto 40px;
-            border: 3px solid var(--oro);
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        /* Sections */
+        .section {
+            padding: 40px 0;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
         }
 
+        /* Artistas */
+        .artistas-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
 
-        /* Secciones */
-        section { padding: 40px 0; border-bottom: 1px solid rgba(212, 175, 55, 0.2); }
+        .artista-card {
+            text-align: center;
+            flex: 1;
+            min-width: 250px;
+        }
 
+        .foto-artista {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 3px solid var(--dorado);
+            object-fit: cover;
+            margin-bottom: 15px;
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+        }
 
-        .descripcion { text-align: center; font-style: italic; font-size: 1.1em; }
-
-
-        /* Grid de Espacio */
-        .espacio-container {
+        /* Domo y Cámara */
+        .espacio-info {
             display: flex;
             align-items: center;
-            gap: 20px;
+            gap: 30px;
             flex-wrap: wrap;
         }
-        .espacio-texto { flex: 2; min-width: 300px; }
-        .espacio-img { 
-            flex: 1; 
-            min-width: 250px; 
-            border: 2px solid var(--oro); 
-            border-radius: 15px;
-            max-height: 350px;
-            object-fit: cover;
+
+        .foto-domo {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            border: 1px solid var(--dorado);
         }
 
-
-        /* Info Box */
-        .info-box {
-            background-color: var(--marron-claro);
-            padding: 30px;
-            border-radius: 15px;
-            border: 1px gold solid;
+        /* Botón y Formulario */
+        .cta-container {
             text-align: center;
-            margin-top: 40px;
+            padding: 60px 0;
         }
 
-
-        .price { font-size: 1.5em; color: var(--oro); font-weight: bold; margin: 15px 0; }
-
-
-        /* Botón */
-        .btn {
-            display: inline-block;
-            background: linear-gradient(45deg, var(--oro-viejo), var(--oro));
+        .btn-inscripcion {
+            background-color: var(--dorado);
             color: var(--marron-oscuro);
-            padding: 15px 40px;
+            padding: 18px 40px;
+            font-size: 1.2em;
             text-decoration: none;
             font-weight: bold;
             border-radius: 50px;
-            transition: transform 0.3s, box-shadow 0.3s;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-top: 20px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
         }
 
-
-        .btn:hover {
+        .btn-inscripcion:hover {
+            background-color: var(--dorado-suave);
             transform: scale(1.05);
-            box-shadow: 0 0 20px var(--oro);
         }
 
-
-        footer { text-align: center; padding: 40px; font-size: 0.8em; opacity: 0.7; }
-
-
-        @media (max-width: 600px) {
-            .main-title { font-size: 1.8em; }
+        .precio {
+            font-size: 1.5em;
+            color: var(--dorado-suave);
+            margin-bottom: 20px;
         }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9em;
+            color: var(--dorado);
+        }
+
+        /* Estilo para imágenes que aún no tienes */
+        .placeholder-img {
+            background: #444;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-style: italic;
+        }
+
     </style>
 </head>
 <body>
 
-
-    <header>
-        <p class="subtitle">ALAN SUEZ & NAT BHAIRAV</p>
-        <h1 class="main-title">Meditación Sonora con Sitares</h1>
-        <p>Una experiencia de escucha profunda y recalibración</p>
-    </header>
-
+    <div class="hero">
+        <h1>Meditación Sonora con Sitares</h1>
+        <p>Una experiencia de escucha profunda y elevación de consciencia</p>
+        <div style="margin-top: 20px; font-weight: bold;">
+            📅 20 de Junio | 🕒 18:30 hs <br>
+            📍 Escobar, Buenos Aires
+        </div>
+    </div>
 
     <div class="container">
-        <!-- Foto Principal de los Artistas -->
-        <img src="https://lh3.googleusercontent.com/d/1_T02k-Xq_A8N9E4hG9zM0-q2W_S_7W9_" alt="Alan Suez y Nat Bhairav con Sitares" class="img-artistas">
-
-
-        <section class="descripcion">
-            <p>
-                Te invitamos a entrar en un estado de calma, presencia y contemplación a través de la vibración de dos sitares. 
-                Un diálogo musical inspirado en el lenguaje del <strong>Raga</strong>, donde cada modo evoca un clima emocional único.
-            </p>
+        
+        <section class="section">
+            <h2>La Experiencia ✨</h2>
+            <p>La Meditación Sonora con Sitares es un viaje hacia la calma y la contemplación. A través de la vibración envolvente de dos sitares, actuamos directamente sobre el sistema nervioso, favoreciendo la relajación profunda.</p>
+            <p>Inspirados en el lenguaje del <strong>Raga</strong>, creamos un diálogo musical que evoca atmósferas emocionales únicas, invitando a la introspección y al descanso mental en un paisaje sonoro orgánico.</p>
         </section>
 
-
-        <section>
-            <h2>✨ El Espacio Sagrado</h2>
-            <div class="espacio-container">
-                <div class="espacio-texto">
-                    <p>La actividad se realizará dentro de la <strong>Cámara Taquiónica</strong>, ubicada en un domo geodésico en Escobar.</p>
-                    <p>Este espacio está diseñado para concentrar energía taquiónica cósmica, favoreciendo la elevación de la consciencia a dimensiones superiores de manifestación.</p>
+        <section class="section">
+            <h2>Los Artistas 🎶</h2>
+            <div class="artistas-grid">
+                <div class="artista-card">
+                    <!-- Reemplaza 'foto-alan.jpg' con tu archivo real -->
+                    <img src="foto-alan.jpg" alt="Alan Suez" class="foto-artista">
+                    <h3>Alan Suez</h3>
+                    <p>@alan.sitar</p>
+                    <p>Especialista en música clásica de la India, dedicado a transmitir la mística del sitar a través de la interpretación y la enseñanza.</p>
                 </div>
-                <!-- Foto pequeña del domo -->
-                <img src="https://lh3.googleusercontent.com/d/1p5x7uH0F_3N6E_Wk-XqM-o_T_7_S_7_S" alt="Domo Geodésico Cámara Taquiónica" class="espacio-img">
+                <div class="artista-card">
+                    <!-- Reemplaza 'foto-nat.jpg' con tu archivo real -->
+                    <img src="foto-nat.jpg" alt="Nat Bhairav" class="foto-artista">
+                    <h3>Nat Bhairav</h3>
+                    <p>@nat.bhairav</p>
+                    <p>Explorador sonoro enfocado en la vibración como herramienta de sanación y estados expandidos de conciencia.</p>
+                </div>
             </div>
         </section>
 
-
-        <section>
-            <h2>🎶 Sobre los Artistas</h2>
-            <p><strong>Alan Suez (@alan.sitar)</strong> y <strong>Nat Bhairav (@nat.bhairav)</strong> son especialistas en la tradición milenaria de la música clásica de India. A través de la improvisación lenta y contemplativa, crean paisajes sonoros orgánicos que facilitan el descanso mental y la introspección profunda.</p>
+        <section class="section">
+            <h2>El Espacio: Cámara Taquiónica 🌌</h2>
+            <div class="espacio-info">
+                <div>
+                    <p>Nos encontraremos dentro de un <strong>domo geodésico</strong> que alberga la Cámara Taquiónica. Este espacio está diseñado para concentrar energía taquiónica cósmica, facilitando la recalibración energética y la elevación de la consciencia.</p>
+                    <p>Es la unión perfecta entre arquitectura sagrada, naturaleza y sonido.</p>
+                </div>
+                <!-- Reemplaza 'foto-domo.jpg' con tu archivo real -->
+                <img src="foto-domo.jpg" alt="Domo Geodésico" class="foto-domo">
+            </div>
         </section>
 
-
-        <section class="info-box">
-            <h2>📅 Detalles del Encuentro</h2>
-            <p>📍 <strong>Lugar:</strong> Escobar (Domo Cámara Taquiónica)</p>
-            <p>⏰ <strong>Fecha:</strong> 20 de Junio - 18:30 Horas</p>
-            <p class="price">Valor: $40.000</p>
-            
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSenzmt8bIclKMIeQRN9PNlR-KM7kVBr6d7l5v4ilskDpdgmcQ/viewform?usp=publish-editor" class="btn" target="_blank">
-                Reservar mi lugar
+        <section class="cta-container">
+            <h2>Reserva tu Lugar</h2>
+            <div class="precio">Valor de la actividad: $40.000</div>
+            <p>Cupos limitados para mantener la armonía del espacio.</p>
+            <br>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSenzmt8bIclKMIeQRN9PNlR-KM7kVBr6d7l5v4ilskDpdgmcQ/viewform?usp=publish-editor" class="btn-inscripcion" target="_blank">
+                COMPLETAR FORMULARIO DE INSCRIPCIÓN
             </a>
         </section>
 
-
-        <footer>
-            <p>&copy; 2024 Meditación Sonora - Geometría Sagrada y Sonido</p>
-        </footer>
     </div>
 
+    <footer>
+        <p>&copy; 2024 Meditación Sonora con Sitares - Todos los derechos reservados</p>
+    </footer>
 
 </body>
 </html>

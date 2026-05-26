@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditación Sonora con Sitares - Escobar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --oro: #D4AF37;
+            --oro-viejo: #C5A028;
+            --marron-oscuro: #2C1B12;
+            --marron-claro: #4E3629;
+            --crema: #F5E6CA;
+        }
+
+
+        body {
+            margin: 0;
+            font-family: 'Raleway', sans-serif;
+            background-color: var(--marron-oscuro);
+            color: var(--crema);
+            line-height: 1.6;
+        }
+
+
+        h1, h2, h3 {
+            font-family: 'Cinzel', serif;
+            color: var(--oro);
+            text-align: center;
+        }
+
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+
+        /* Hero Section */
+        header {
+            padding: 60px 20px;
+            text-align: center;
+            background: linear-gradient(rgba(44, 27, 18, 0.7), rgba(44, 27, 18, 0.7)), 
+                        url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&q=80'); /* Fondo sutil de estrellas */
+            background-size: cover;
+            border-bottom: 2px solid var(--oro);
+        }
+
+
+        .main-title { font-size: 2.5em; margin-bottom: 10px; text-shadow: 2px 2px 4px #000; }
+        .subtitle { font-size: 1.2em; color: var(--oro-viejo); letter-spacing: 2px; }
+
+
+        /* Imagen Artistas */
+        .img-artistas {
+            width: 100%;
+            max-width: 700px;
+            display: block;
+            margin: -40px auto 40px;
+            border: 3px solid var(--oro);
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+
+        /* Secciones */
+        section { padding: 40px 0; border-bottom: 1px solid rgba(212, 175, 55, 0.2); }
+
+
+        .descripcion { text-align: center; font-style: italic; font-size: 1.1em; }
+
+
+        /* Grid de Espacio */
+        .espacio-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .espacio-texto { flex: 2; min-width: 300px; }
+        .espacio-img { 
+            flex: 1; 
+            min-width: 250px; 
+            border: 2px solid var(--oro); 
+            border-radius: 15px;
+            max-height: 350px;
+            object-fit: cover;
+        }
+
+
+        /* Info Box */
+        .info-box {
+            background-color: var(--marron-claro);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px gold solid;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+
+        .price { font-size: 1.5em; color: var(--oro); font-weight: bold; margin: 15px 0; }
+
+
+        /* Botón */
+        .btn {
+            display: inline-block;
+            background: linear-gradient(45deg, var(--oro-viejo), var(--oro));
+            color: var(--marron-oscuro);
+            padding: 15px 40px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 20px;
+        }
+
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px var(--oro);
+        }
+
+
+        footer { text-align: center; padding: 40px; font-size: 0.8em; opacity: 0.7; }
+
+
+        @media (max-width: 600px) {
+            .main-title { font-size: 1.8em; }
+        }
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <p class="subtitle">ALAN SUEZ & NAT BHAIRAV</p>
+        <h1 class="main-title">Meditación Sonora con Sitares</h1>
+        <p>Una experiencia de escucha profunda y recalibración</p>
+    </header>
+
+
+    <div class="container">
+        <!-- Foto Principal de los Artistas -->
+        <img src="https://lh3.googleusercontent.com/d/1_T02k-Xq_A8N9E4hG9zM0-q2W_S_7W9_" alt="Alan Suez y Nat Bhairav con Sitares" class="img-artistas">
+
+
+        <section class="descripcion">
+            <p>
+                Te invitamos a entrar en un estado de calma, presencia y contemplación a través de la vibración de dos sitares. 
+                Un diálogo musical inspirado en el lenguaje del <strong>Raga</strong>, donde cada modo evoca un clima emocional único.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>✨ El Espacio Sagrado</h2>
+            <div class="espacio-container">
+                <div class="espacio-texto">
+                    <p>La actividad se realizará dentro de la <strong>Cámara Taquiónica</strong>, ubicada en un domo geodésico en Escobar.</p>
+                    <p>Este espacio está diseñado para concentrar energía taquiónica cósmica, favoreciendo la elevación de la consciencia a dimensiones superiores de manifestación.</p>
+                </div>
+                <!-- Foto pequeña del domo -->
+                <img src="https://lh3.googleusercontent.com/d/1p5x7uH0F_3N6E_Wk-XqM-o_T_7_S_7_S" alt="Domo Geodésico Cámara Taquiónica" class="espacio-img">
+            </div>
+        </section>
+
+
+        <section>
+            <h2>🎶 Sobre los Artistas</h2>
+            <p><strong>Alan Suez (@alan.sitar)</strong> y <strong>Nat Bhairav (@nat.bhairav)</strong> son especialistas en la tradición milenaria de la música clásica de India. A través de la improvisación lenta y contemplativa, crean paisajes sonoros orgánicos que facilitan el descanso mental y la introspección profunda.</p>
+        </section>
+
+
+        <section class="info-box">
+            <h2>📅 Detalles del Encuentro</h2>
+            <p>📍 <strong>Lugar:</strong> Escobar (Domo Cámara Taquiónica)</p>
+            <p>⏰ <strong>Fecha:</strong> 20 de Junio - 18:30 Horas</p>
+            <p class="price">Valor: $40.000</p>
+            
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSenzmt8bIclKMIeQRN9PNlR-KM7kVBr6d7l5v4ilskDpdgmcQ/viewform?usp=publish-editor" class="btn" target="_blank">
+                Reservar mi lugar
+            </a>
+        </section>
+
+
+        <footer>
+            <p>&copy; 2024 Meditación Sonora - Geometría Sagrada y Sonido</p>
+        </footer>
+    </div>
+
+
+</body>
+</html>
